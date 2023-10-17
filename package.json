@@ -1,0 +1,19 @@
+{
+  "name": "mhellams-libraries",
+  "version": "0.0.0",
+  "description": "Collection of libraries authored by Marcus T. Hellams",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test:ci": "turbo run test:ci",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "Marcus Hellams",
+  "license": "MIT",
+  "devDependencies": {
+    "turbo": "^1.10.15",
+    "husky": "^8.0.0"
+  }
+}
