@@ -1,6 +1,6 @@
 {
   "name": "@mhellams/mth-log",
-  "private": true,
+  "private": false,
   "version": "0.0.1",
   "main": "dist/mth-log-cjs.js",
   "module": "dist/mth-log-es.js",
