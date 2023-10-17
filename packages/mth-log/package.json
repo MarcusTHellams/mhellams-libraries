@@ -6,6 +6,10 @@
   "module": "dist/mth-log-es.js",
   "browser": "dist/mth-log-umd.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "url": "https://github.com/MarcusTHellams/mhellams-libraries"
+  },
+  "homepage": "https://github.com/MarcusTHellams/mhellams-libraries",
   "files": [
     "dist"
   ],
