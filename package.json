@@ -12,6 +12,10 @@
   "keywords": [],
   "author": "Marcus Hellams",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/MarcusTHellams/mhellams-libraries"
+  },
+  "homepage": "https://github.com/MarcusTHellams/mhellams-libraries",
   "devDependencies": {
     "turbo": "^1.10.15",
     "husky": "^8.0.0"
