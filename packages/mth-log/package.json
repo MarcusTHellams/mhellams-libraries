@@ -1,7 +1,7 @@
 {
   "name": "@mhellams/mth-log",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/mth-log-cjs.js",
   "module": "dist/mth-log-es.js",
   "browser": "dist/mth-log-umd.js",

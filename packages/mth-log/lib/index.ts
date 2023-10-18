@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
-const log = (prefix = '', obj: unknown) => {
-  console.log(prefix, JSON.stringify(obj, null, 2));
+const log = (...args: unknown[]) => {
+  console.log.apply(this, [...args.map((arg) => JSON.stringify(arg, null, 2))]);
 };
 
 export default log;
