@@ -1,23 +1,9 @@
-import { useState } from 'react';
-
-import { MTHReactLoader } from '../lib';
+import { Chakra } from './Chakra';
 
 function App() {
-  const [container, setContainer] = useState<HTMLDivElement | null>(null);
   return (
     <>
-      <div
-        ref={setContainer}
-        style={{
-          height: '250px',
-          backgroundColor: 'red',
-          color: 'white',
-          position: 'relative',
-        }}
-      >
-        Hello World
-      </div>
-      <MTHReactLoader container={container} show render={() => 'Children'} />
+      <Chakra />
     </>
   );
 }
