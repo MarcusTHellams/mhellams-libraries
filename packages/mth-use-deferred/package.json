@@ -1,10 +1,14 @@
 {
   "name": "@mhellams/mth-use-deferred-promise",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/mth-use-deferred-promise-cjs.js",
   "module": "dist/mth-use-deferred-promise-es.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "url": "https://github.com/MarcusTHellams/mhellams-libraries"
+  },
+  "homepage": "https://github.com/MarcusTHellams/mhellams-libraries",
   "files": [
     "dist"
   ],
