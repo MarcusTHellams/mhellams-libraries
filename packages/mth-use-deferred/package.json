@@ -1,7 +1,7 @@
 {
   "name": "@mhellams/mth-use-deferred",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "dist/mth-use-deferred-cjs.js",
   "module": "dist/mth-use-deferred-es.js",
   "types": "dist/index.d.ts",
@@ -17,7 +17,8 @@
     "test": "vitest --reporter=verbose",
     "test:ci": "vitest run --reporter=verbose",
     "test:coverage": "vitest --watch=false --silent --coverage --reporter=verbose",
-    "prepare": "husky install"
+    "publish": "npm publish --access=public",
+    "prepublish": "npm run lint && npm run build"
   },
   "devDependencies": {
     "@chakra-ui/react": "^2.8.1",
@@ -43,7 +44,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "framer-motion": "^10.16.4",
-    "husky": "^8.0.0",
     "jest": "^28.1.1",
     "jsdom": "^20.0.0",
     "prettier": "^2.7.1",
