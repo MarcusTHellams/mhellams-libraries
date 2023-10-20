@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 
-type DeferredPromise<DeferType> = {
+export type DeferredPromise<DeferType> = {
   resolve: (value: DeferType) => void;
   reject: (value: unknown) => void;
   promise: Promise<DeferType>;

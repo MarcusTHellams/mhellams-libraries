@@ -24,10 +24,10 @@ export const Dialog = ({ isOpen, handleClose, handleConfirm }: DialogProps) => {
         <ModalCloseButton />
         <ModalBody>Do you really want to remove this task?</ModalBody>
         <ModalFooter gap="3">
-          <Button colorScheme="red" onClick={handleClose}>
+          <Button data-testId="no" colorScheme="red" onClick={handleClose}>
             No
           </Button>
-          <Button colorScheme="green" onClick={handleConfirm}>
+          <Button data-testId="yes" colorScheme="green" onClick={handleConfirm}>
             Yes
           </Button>
         </ModalFooter>
