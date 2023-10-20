@@ -1,7 +1,7 @@
 {
   "name": "@mhellams/mth-use-deferred-promise",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/mth-use-deferred-promise-cjs.js",
   "module": "dist/mth-use-deferred-promise-es.js",
   "types": "dist/index.d.ts",
