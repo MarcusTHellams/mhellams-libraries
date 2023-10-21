@@ -1,6 +1,15 @@
 import { Box, BoxProps, Portal, PortalProps } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 
+type T = {
+  [key in keyof HTMLSelectElement]?: HTMLSelectElement[key];
+};
+
+const j: T = {
+  value: 'marcus',
+
+};
+
 export type MThChakraLoaderProps = {
   show: boolean;
   boxProps?: BoxProps;
