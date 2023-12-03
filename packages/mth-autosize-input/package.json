@@ -1,7 +1,7 @@
 {
   "name": "@mhellams/mth-autosize-input",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "dist/mth-autosize-input-cjs.js",
   "module": "dist/mth-autosize-input-es.js",
   "browser": "dist/mth-autosize-input-umd.js",
