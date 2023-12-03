@@ -17,7 +17,9 @@
     "preview": "vite preview",
     "test": "vitest --reporter=verbose",
     "test:ci": "vitest run --reporter=verbose",
-    "test:coverage": "vitest --watch=false --silent --coverage --reporter=verbose"
+    "test:coverage": "vitest --watch=false --silent --coverage --reporter=verbose",
+    "publish": "npm publish --access=public",
+    "prepublish": "npm run lint && npm run build"
   },
   "devDependencies": {
     "@testing-library/dom": "^8.16.0",
