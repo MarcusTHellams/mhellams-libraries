@@ -24,6 +24,7 @@ export const usePoll = ({
   pollCount?: number;
 }) => {
   const fnRef = useRef(fn);
+  fnRef.current = fn;
   const pollCountRef = useRef(1);
 
   useEffect(() => {
