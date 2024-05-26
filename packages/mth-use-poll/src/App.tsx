@@ -12,6 +12,10 @@ setTimeout(() => {
 
 function App({ successfulPoll = true }: { successfulPoll?: boolean }) {
   usePoll({
+    ms: 100,
+    pollFailsFn() {
+      console.log('window.marcus never found');
+    },
     fn: (interval) => {
       console.log('Polling');
       if (window.marcus && successfulPoll) {
@@ -19,7 +23,7 @@ function App({ successfulPoll = true }: { successfulPoll?: boolean }) {
         clearInterval(interval);
       }
     },
-    pollCount: 30,
+    pollCount: 2,
   });
   return (
     <div>

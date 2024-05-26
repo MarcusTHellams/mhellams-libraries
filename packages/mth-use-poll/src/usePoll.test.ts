@@ -24,15 +24,20 @@ describe('usePoll', () => {
     expect(fn).toHaveBeenCalledTimes(3);
   });
 
-  it('should stop polling after pollCount is reached', () => {
+  it('should stop polling after pollCount is reached and run the failedFn function', () => {
     const fn = vi.fn();
-    renderHook(() => usePoll({ fn, ms: 1000, pollCount: 3 }));
+    const failedFn = vi.fn();
+    renderHook(() =>
+      usePoll({ fn, ms: 1000, pollCount: 3, pollFailsFn: failedFn })
+    );
 
     vi.advanceTimersByTime(3000);
     expect(fn).toHaveBeenCalledTimes(3);
+    expect(failedFn).toHaveBeenCalledTimes(1);
 
     vi.advanceTimersByTime(1000);
     expect(fn).toHaveBeenCalledTimes(3); // should not be called more than pollCount
+    expect(failedFn).toHaveBeenCalledTimes(1);
   });
 
   it('should clear the interval when the condition is met', () => {
