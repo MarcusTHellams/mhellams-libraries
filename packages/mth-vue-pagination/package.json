@@ -9,6 +9,9 @@
 	"repository": {
 		"url": "https://github.com/MarcusTHellams/mhellams-libraries"
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"homepage": "https://github.com/MarcusTHellams/mhellams-libraries",
 	"files": [
 		"dist"
