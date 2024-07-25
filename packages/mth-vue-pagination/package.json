@@ -1,7 +1,7 @@
 {
   "name": "@mhellams/mth-vue-pagination",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "main": "dist/mth-vue-pagination-cjs.js",
   "module": "dist/mth-vue-pagination-es.js",
