@@ -32,7 +32,7 @@ export const useUncontrolled = <T>({
 
 	const handleUncontrolledChange = (val: MaybeRefOrGetter<T>) => {
 		uncontrolledValue.value = toValue(val);
-		onChange?.(val);
+		onChange?.(toValue(val));
 	};
 
 	if (toValue(value) !== undefined) {

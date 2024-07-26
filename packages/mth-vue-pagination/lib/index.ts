@@ -21,7 +21,7 @@ export interface UseMthPaginationParams {
   /** Amount of elements visible on left/right edges, defaults to 1  */
   boundaries?: MaybeRefOrGetter<number>;
   /** Callback fired after change of each page */
-  onChange?: (page: MaybeRefOrGetter<number>) => void;
+  onChange?: (page: number) => void;
 }
 
 export const useMthPagination = (params: UseMthPaginationParams) => {

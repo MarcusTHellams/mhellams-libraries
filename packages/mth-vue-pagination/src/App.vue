@@ -1,22 +1,22 @@
 <script setup lang="ts">
-import { ref, toValue } from 'vue';
+import { ref } from 'vue';
 import { useMthPagination } from '../lib';
 const page = ref(1);
 
 // UNCONTROLLED
-/*
-  const pagination = useMthPagination({
-    default: page,
-    total: 10,
-  });
 
-*/
+ /*  const pagination = useMthPagination({
+    defaultPage: page,
+    total: 10,
+  }); */
+
+
 
 const pagination = useMthPagination({
 	page: page,
 	total: 10,
 	onChange: (_page) => {
-		page.value = toValue(_page);
+		page.value = _page;
 	},
 });
 </script>
